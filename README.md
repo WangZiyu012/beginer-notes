@@ -1,3 +1,91 @@
+# data types
+
+## strings
+
+a str of characters
+str[n] prints out the character in the n+1 place
+
+## integer
+
+whole actual number
+1_234-->1,234
+
+## float
+
+decimal number
+
+## boolean
+
+True/False
+
+# type converting
+
+type(): output the type of the input
+
+str(): convert into string data type
+
+int(): convert into int data type
+
+float(): convert into float data type
+
+# operations
+
++: combine strings;
+
++,-,\*,/:math operations
+
+\*\*: power.
+
+all the output is float data type
+
+order: (PEMDAS) ()--> \*_ --> _,/ --> +,-
+
+# number manipulation
+
+print(round(8/3.the number you want to round into))
+
+print(8//3) round to 2 decimals
+
+a = a + 1 equals a+=1
+
+# F strings
+
+use when we want to correctly work with different types of data, instead of converting every variables, we can use f str, and python does the converting for correctly output.
+
+```
+x=1
+y=2.123
+print(f"your score is {x} and {y}")
+```
+
+
+
+# key concepts
+
+if else elif
+
+if condition1 and/or condition2 :
+
+if not condition :
+
+
+# random module
+
+import random module, askpython.com
+
+module is something to do specific function
+
+create own module is also accessible, just create new python file
+
+# list
+
+list_0 = [sth1, sth2], sth can also be a list.
+
+list[n], n starts from 0 to length
+
+.append("end"): add item to the list
+
+
 # loop
 
 ```
