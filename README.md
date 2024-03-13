@@ -1,3 +1,25 @@
+# just a trival name genrator
+
+# print commands
+
+1. print(): printing
+2. \n: next line
+3. +: print combined string
+4. input(): get prompt. passing user's input data to the sentence, and user will see the sentence you input in the ()
+5. len(): calculate the length of the str
+
+# save variables
+
+Once use "input", the variables input will be saved by the functions, by hold it with a variable, we can access it after.
+
+# variables naming rules
+
+1. make sense to you
+2. 1 single unit
+3. use "\_" to separate
+4. can not use number in the first character
+
+
 # data types
 
 ## strings
