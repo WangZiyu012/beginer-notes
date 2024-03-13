@@ -134,7 +134,6 @@ def function(x, y):
 ![img.png](img2.png)
 
 
-
 # indentation
 
 similar with the file and folder in the PC
