@@ -32,6 +32,7 @@ fc_2() # can'† call, because fc_2 is in the scope of fc_1()
 
 ```
 
+ 
 
 ```angular2html
 
