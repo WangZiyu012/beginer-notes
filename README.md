@@ -1,3 +1,36 @@
+# dictionary
+
+group together data and tag
+
+think it as a table. every dictionary has 2 parts: key & value.
+
+```angular2html
+dic = {
+"key_1": "value_1", 
+"key_2": "value_2",
+123: "value_3"
+}
+
+# retrieving items
+dic["key_1"]
+
+# editing & adding new items
+dic["new_item"] = "new_value"
+
+# initialization & wiping
+empty_dic = {}
+dic = {}
+
+# looping through, get the keys in dic
+for things in dic:
+    print(things)
+```
+
+# nesting
+
+![img.png](img.png)
+
+
 # function with output 
 ```angular2html
 
