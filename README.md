@@ -1,4 +1,6 @@
 
+# Section 0
+
 # print commands
 
 1. print(): printing
@@ -240,3 +242,34 @@ print (new_enemy)
 
 1. use print()
 2. use debugger python visualizer
+
+
+# Section 1. 
+
+# importing modules
+
+way 1: 
+```angular2html
+import module
+```
+This can be very annoying if constantly using 1 thing in module, such as module.thing
+
+way 2:
+```angular2html
+from module import Thing
+```
+In this way we only need to type Thing directly to use it.
+
+way 3:
+```angular2html
+from module import *
+```
+If everything in module will be frequently used, import this way. But please avoid.
+
+way 4:
+```angular2html
+import module as m
+```
+quite useful way to import, if module has a long name.
+
+If find a module can not be imported, install first.
