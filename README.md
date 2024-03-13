@@ -1,4 +1,3 @@
-# just a trival name genrator
 
 # print commands
 
