@@ -1,3 +1,29 @@
+# function
+```
+
+def function():
+
+def function(x, y):
+# do sth with x, y
+
+```
+![img.png](img2.png)
+
+
+
+# indentation
+
+similar with the file and folder in the PC
+
+# while loop
+
+```angular2html
+
+while sth-is-true:
+
+```
+
+
 # dictionary
 
 group together data and tag
