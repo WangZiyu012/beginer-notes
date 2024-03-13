@@ -28,7 +28,7 @@ for things in dic:
 
 # nesting
 
-![img.png](img.png)
+![img1.png](img1.png)
 
 
 # function with output 
