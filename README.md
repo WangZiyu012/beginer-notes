@@ -1,4 +1,3 @@
-
 # Section 0
 
 # print commands
@@ -19,7 +18,6 @@ Once use "input", the variables input will be saved by the functions, by hold it
 2. 1 single unit
 3. use "\_" to separate
 4. can not use number in the first character
-
 
 # data types
 
@@ -81,8 +79,6 @@ y=2.123
 print(f"your score is {x} and {y}")
 ```
 
-
-
 # key concepts
 
 if else elif
@@ -90,7 +86,6 @@ if else elif
 if condition1 and/or condition2 :
 
 if not condition :
-
 
 # random module
 
@@ -108,7 +103,6 @@ list[n], n starts from 0 to length
 
 .append("end"): add item to the list
 
-
 # loop
 
 ```
@@ -125,6 +119,7 @@ for item in range(a, b, *step):
 ```
 
 # function
+
 ```
 
 def function():
@@ -133,8 +128,8 @@ def function(x, y):
 # do sth with x, y
 
 ```
-![img.png](img2.png)
 
+![img.png](img2.png)
 
 # indentation
 
@@ -148,7 +143,6 @@ while sth-is-true:
 
 ```
 
-
 # dictionary
 
 group together data and tag
@@ -157,7 +151,7 @@ think it as a table. every dictionary has 2 parts: key & value.
 
 ```angular2html
 dic = {
-"key_1": "value_1", 
+"key_1": "value_1",
 "key_2": "value_2",
 123: "value_3"
 }
@@ -181,8 +175,8 @@ for things in dic:
 
 ![img1.png](img1.png)
 
+# function with output
 
-# function with output 
 ```angular2html
 
 def function():
@@ -208,6 +202,7 @@ def function():
 # scope
 
 things inside the function are blocked.
+
 ```angular2html
 def fc_1():
     def fc_2():
@@ -215,8 +210,6 @@ def fc_1():
 fc_2() # can'† call, because fc_2 is in the scope of fc_1()
 
 ```
-
- 
 
 ```angular2html
 
@@ -238,38 +231,66 @@ def create_enemy () :
 print (new_enemy)
 # this time var. is created inside the function, so it will be scoped
 ```
+
 # how to debug
 
 1. use print()
 2. use debugger python visualizer
 
-
-# Section 1. 
+# Section 1.
 
 # importing modules
 
-way 1: 
+way 1:
+
 ```angular2html
 import module
 ```
+
 This can be very annoying if constantly using 1 thing in module, such as module.thing
 
 way 2:
+
 ```angular2html
 from module import Thing
 ```
+
 In this way we only need to type Thing directly to use it.
 
 way 3:
+
 ```angular2html
 from module import *
 ```
+
 If everything in module will be frequently used, import this way. But please avoid.
 
 way 4:
+
 ```angular2html
 import module as m
 ```
+
 quite useful way to import, if module has a long name.
 
 If find a module can not be imported, install first.
+
+# read and write file
+
+```
+with open('my_file.txt', 'w') as f:
+   f.write('Hello, world!')
+```
+
+# absolute file path
+
+![alt text](image.png)
+
+# relative file path
+
+working directory: the project folder we are now at. use ".\" to represent the current file path
+
+![alt text](image-1.png)
+![alt text](image-2.png)
+
+# read CSV files
