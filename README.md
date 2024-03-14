@@ -294,3 +294,109 @@ working directory: the project folder we are now at. use ".\" to represent the c
 ![alt text](image-2.png)
 
 # read CSV files
+
+CSV (comma separate values) is a very common way to visualize the data into tables like a spreadsheet
+
+```
+# open weather_data.csv
+
+import csv
+import pandas as pd
+
+with open('./US-map/weather_data.csv') as data_file:
+   data = data_file.readlines()
+   print(data)
+   temperatures = []
+   for row in data:
+      if row[1] != 'temp':
+         temperatures.append(int(row[1]))
+   print(temperatures)
+
+```
+
+```
+# open weather_data.csv
+
+import csv
+import pandas as pd
+
+with open('./US-map/weather_data.csv') as data_file:
+   data = csv.reader(data_file) # can be looped through
+   print(data)
+   for row in data:
+      print(row)
+```
+
+```
+# open weather_data.csv
+
+import csv
+import pandas as pd
+
+with open('./US-map/weather_data.csv') as data_file:
+   data = csv.reader(data_file) # can be looped through
+   temperatures = []
+   for row in data:
+      if row[1] != 'temp':
+         temperatures.append(row[1])
+   print(temperatures)
+```
+
+# pandas library
+
+```
+# open weather_data.csv
+
+import csv
+import pandas as pd
+
+# read the csv file
+
+pandas_data = pd.read_csv('./US-map/weather_data.csv') # simple 1 line code kills the 3 lines of code in the previous file
+print(pandas_data)
+print(pandas_data['day'])
+```
+
+There are 2 primary data structures of pandas, series(1-d) and DataFrame (2-d)
+
+```
+type(pandas_data['day'])
+type(pandas_data) # DataFrame
+# this is to check the type of the data
+```
+
+basically, we can convert these data structures in pandas to any other formats(dictionary, list,...)
+
+```
+# get data in the column
+temp_list = data['temp'].to_list()
+```
+
+```
+# get data in the row
+row_index = 0  # Replace 0 with the desired row index
+row_data = pandas_data.iloc[row_index]
+print(row_data)
+```
+
+```
+# open weather_data.csv
+
+import csv
+import pandas as pd
+
+# create a dataframe from scratch
+
+data_dict = {
+"students": ["Amy", "James", "Angela"],
+"scores": [76, 56, 65]
+}
+
+data = pd.DataFrame(data_dict) # convert the dictionary to a dataframe
+
+print(data)
+
+# convert data to csv
+
+data.to_csv("./US-map/new_data.csv") # save the dataframe to a csv file
+```
