@@ -400,3 +400,40 @@ print(data)
 
 data.to_csv("./US-map/new_data.csv") # save the dataframe to a csv file
 ```
+
+# list comprehension
+
+create a list from a previous list. (we use for loop to do this so far)
+
+create list comprehension:
+
+```
+new_list = [new_item for item in list]
+```
+
+```
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+new_numbers = []
+
+for n in numbers:
+   new_numbers.append(n + 1)
+
+print(new_numbers)
+```
+
+```
+# use list comprehension
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+new_numbers = [n+1 for n in numbers]
+print(new_numbers)
+```
+
+```
+new_list = [new_item for item in list if test]
+```
+
+# dictionary comprehension
+
+```
+new_dic = { new_key:new_value for item in list }
+```
